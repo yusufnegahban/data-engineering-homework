@@ -1,6 +1,6 @@
 
 #Question 3. Trip Segmentation Count
-
+```sql
 SELECT 
     CASE 
         WHEN trip_distance <= 1 THEN 'Up to 1 mile'
@@ -16,11 +16,12 @@ WHERE
     AND lpep_pickup_datetime < '2019-11-01'
 GROUP BY segment;
 
-
-
+```
 "segment"	"num_trips"
 "10+ miles"	35201
 "1~3 miles"	198995
 "3~7 miles"	109642
 "7~10 miles"	27686
 "Up to 1 mile"	104830
+```
+Answer: `104,802; 198,924; 109,603; 27,678; 35,189`
