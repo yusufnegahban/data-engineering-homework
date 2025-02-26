@@ -20,3 +20,4 @@ LIMIT 1;
 | Morningside Heights   | 13029.79             |
 
 ```
+Answer: `2019-10-31`
